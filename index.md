@@ -6,4 +6,4 @@ has_children: true
 parent: menu
 ---
 
-This is a *test*.
+![EUC TechCon](/media/400x400-TP-EUC-TechCon.png)
