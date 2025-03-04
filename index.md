@@ -1,5 +1,5 @@
 ---
-title: Welcome to my blog
+title: EUC TechCon
 ---
 
 This is a *test*.
