@@ -19,7 +19,9 @@ ul {
     background-color: #001e60;
     border-radius: 16px;
     position: fixed;
-    width: 100%;
+    width: -webkit-calc(100% - 100px);
+    width:    -moz-calc(100% - 100px);
+    width:         calc(100% - 100px);
     padding-right: 500px;   
     top: 6px;
     left: 160px;
