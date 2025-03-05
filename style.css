@@ -77,4 +77,5 @@ li a:hover {
     display: table;
     clear: both;
     align-items: center;
+    justify-content: center;
 }
