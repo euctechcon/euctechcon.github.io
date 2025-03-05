@@ -47,5 +47,6 @@ li a:hover {
 }
 
 .menubar-logo {
-    background-color: #ffffff;
+    position: fixed;
+    top: 6px;
 }
