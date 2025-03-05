@@ -80,3 +80,9 @@ li a:hover {
     justify-content: center;
     display: flex;
 }
+
+.row {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
