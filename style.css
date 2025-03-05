@@ -37,6 +37,10 @@ li a:hover {
     color: #ffffff;
 }
 
-.active {
+.menubar-active {
     background-color: #7209b7;
+}
+
+.menubar-logo {
+    background-color: #ffffff;
 }
