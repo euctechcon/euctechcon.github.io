@@ -58,5 +58,8 @@ li a:hover {
     font-size: 60px;
     font-weight: 900;
     color: #001e60;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
