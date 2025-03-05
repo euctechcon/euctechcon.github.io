@@ -61,7 +61,7 @@ li a:hover {
     color: #001e60;
     display: flex;
     height: 400px;
-    max-width: 1000px;
+    width: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
