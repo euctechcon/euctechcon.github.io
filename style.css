@@ -60,10 +60,10 @@ li a:hover {
     font-weight: 900;
     color: #001e60;
     display: flex;
-    justify-content: center;
-    align-items: center !important;
     height: 400px;
     max-width: 1000px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
