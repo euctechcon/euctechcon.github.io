@@ -19,8 +19,7 @@ ul {
     background-color: #001e60;
     border-radius: 16px;
     position: fixed;
-    width: calc(100vh - 100px) !important;
-    padding-right: 500px;   
+    width: calc(100vh - 100px) !important; 
     top: 6px;
     left: 160px;
 }
