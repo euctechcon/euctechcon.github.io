@@ -69,7 +69,7 @@ li a:hover {
 .column {
     float: left;
     width: 25%;
-    height: 400px;
+    height: auto;
 }
   
 /* Clear floats after the columns */
@@ -86,8 +86,6 @@ li a:hover {
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .row-header {
