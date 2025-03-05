@@ -52,6 +52,7 @@ li a:hover {
 
 .menubar-logo {
     margin-top: 6px;
+    position: fixed;
 }
 
 .announce-large {
