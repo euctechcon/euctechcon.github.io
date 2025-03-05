@@ -86,3 +86,10 @@ li a:hover {
     justify-content: center;
     display: flex;
 }
+
+.row-header {
+    font-family: "Gabarito", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+}
