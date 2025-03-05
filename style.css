@@ -104,8 +104,8 @@ li a:hover {
 
 .image-circle {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
     display: block;
 }
