@@ -70,7 +70,6 @@ li a:hover {
     float: left;
     width: 25%;
     height: auto;
-    vertical-align: top;
 }
   
 /* Clear floats after the columns */
