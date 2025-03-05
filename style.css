@@ -9,7 +9,7 @@
 
 body {
     font-family: "Gabarito", sans-serif;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 ul {
@@ -23,6 +23,8 @@ ul {
     width: calc(100% - 170px) !important; 
     top: 10px;
     left: 160px;
+    font-family: "Gabarito", sans-serif;
+    font-weight: 700;
 }
   
 li {
