@@ -78,4 +78,5 @@ li a:hover {
     clear: both;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
