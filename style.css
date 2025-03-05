@@ -20,7 +20,7 @@ ul {
     border-radius: 16px;
     position: fixed;
     width: calc(100% - 170px) !important; 
-    top: 6px;
+    top: 10px;
     left: 160px;
 }
   
