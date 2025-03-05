@@ -67,8 +67,9 @@ li a:hover {
 
 .column {
     float: left;
-    width: 33.33%;
+    width: 25%;
     height: 400px;
+    align-items: center;
 }
   
 /* Clear floats after the columns */
