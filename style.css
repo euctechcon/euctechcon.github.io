@@ -69,6 +69,8 @@ li a:hover {
     float: left;
     width: 33.33%;
     background-color: #b5179e;
+    padding-left: 20px;
+    padding-right: 20px;
 }
   
 /* Clear floats after the columns */
