@@ -1,11 +1,14 @@
-@font-face {
-    font-family: Gabarito;
-    src: url(/fonts/Gabarito-Regular.ttf);
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+.gabarito-normal {
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
 
 * {
-    font-family: Gabarito;
+    font-family: gabarito-normal;
 }
 
 ul {
