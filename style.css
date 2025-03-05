@@ -69,7 +69,6 @@ li a:hover {
     float: left;
     width: 25%;
     height: 400px;
-    align-items: center;
 }
   
 /* Clear floats after the columns */
@@ -77,4 +76,5 @@ li a:hover {
     content: "";
     display: table;
     clear: both;
+    align-items: center;
 }
