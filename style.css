@@ -151,6 +151,12 @@ li a:hover {
     text-align: center;
 }
 
+.footer-item {
+    color: #808080;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .dot1 {
     height: 15px;
     width: 15px;
