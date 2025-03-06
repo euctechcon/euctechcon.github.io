@@ -130,3 +130,7 @@ li a:hover {
     display: block;
     border: 6px solid #b5179e;
 }
+
+.spacing-20px {
+    padding: 20px;
+}
