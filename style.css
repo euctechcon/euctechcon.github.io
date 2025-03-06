@@ -141,9 +141,6 @@ li a:hover {
 .footer {
     position: fixed;
     bottom: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .dot1 {
