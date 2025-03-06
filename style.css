@@ -137,3 +137,32 @@ li a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+}
+
+.dot1 {
+    height: 25px;
+    width: 25px;
+    background-color: #560bad;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot2 {
+    height: 25px;
+    width: 25px;
+    background-color: #7209b7;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot3 {
+    height: 25px;
+    width: 25px;
+    background-color: #b5179e;
+    border-radius: 50%;
+    display: inline-block;
+}
