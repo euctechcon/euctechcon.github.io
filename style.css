@@ -111,8 +111,7 @@ li a:hover {
     margin: 0 auto;
     padding: 20px;
     display: block;
-    border-width: 10px;
-    border-color: #7209b7;
+    border: 4px solid #7209b7;
 }
 
 .image-circle-2 {
