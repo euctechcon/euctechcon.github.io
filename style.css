@@ -146,7 +146,7 @@ li a:hover {
 }
 
 .footer {
-    position: static;
+    position: absolute;
     bottom: 10px;
     text-align: center;
 }
