@@ -149,8 +149,7 @@ li a:hover {
     background-color: #560bad;
     border-radius: 50%;
     display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 
 .dot2 {
@@ -159,8 +158,7 @@ li a:hover {
     background-color: #7209b7;
     border-radius: 50%;
     display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 
 .dot3 {
@@ -169,6 +167,5 @@ li a:hover {
     background-color: #b5179e;
     border-radius: 50%;
     display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
