@@ -73,6 +73,12 @@ li a:hover {
     width: 25%;
     height: auto;
 }
+
+.column-wide {
+    float: left;
+    width: 50%;
+    height: auto;
+}
   
 /* Clear floats after the columns */
 .row:after {
