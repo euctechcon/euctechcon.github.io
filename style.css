@@ -199,3 +199,7 @@ li a:hover {
     border-radius: 16px;
     width: calc(100% - 40%);
 }
+
+.border-default {
+    border: 2px solid #ffffff;
+}
