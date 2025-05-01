@@ -7,4 +7,5 @@ kleuren:
 - donkerpaars (#560bad)
 - donkerblauw (#001e60)
 - groen (#10ad0b)
+- blauw (#3a86ff)
 - lichtgrijs (#eeeeee)
