@@ -201,6 +201,18 @@ li a:hover {
 }
 
 .table-default {
-    border: 2px solid #ffffff;
-    font-size: 24px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tr-default {
+    border: 1px solid #ffffff;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+}
+
+.td-default {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
