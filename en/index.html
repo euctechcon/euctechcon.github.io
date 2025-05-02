@@ -10,7 +10,37 @@
         gtag('js', new Date());
 
         gtag('config', 'G-WJJL6L2GZV');
-    </script>    
+    </script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 14, 2025 13:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="timer"
+          document.getElementById("timer").innerHTML = days + "d " + hours + "u "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "------";
+          }
+        }, 1000);
+    </script>         
     <title>EUC TechCon</title>
     <link rel="icon" type="image/x-icon" href="/media/favicon.png">
     <link rel="stylesheet" type="text/css" href="../style.css">
@@ -32,7 +62,7 @@
 
 <br><br>
 <div class="announce-large">Welcome to the EUC TechCon website!</div>
-<br><br>
+<center>Time until the event:<br><div id="timer" class="timer"></div></center><br><br><br>
 
 <div class="row">
     <div class="column" style="background-color: #10ad0b; color: #ffffff; padding: 20px; margin-left: 20px; margin-right: 20px; border-radius: 16px;"><img src="/media/ticket-simple-svgrepo-com.svg" height="24px" style="filter: invert(1); padding-right: 10px;"><text class="row-header">Tickets</text><br><br><text class="row-text"><i>Order your free ticket(s) for the 'Pub Edition' of the EUC TechCon via <a href="https://www.eventbrite.nl/e/tickets-euc-techcon-2025-1269318569009" style="color: #cccccc" target="_blank">Eventbrite</a></i></text></div>
