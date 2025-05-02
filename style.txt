@@ -8,4 +8,5 @@ kleuren:
 - donkerblauw (#001e60)
 - groen (#10ad0b)
 - blauw (#3a86ff)
+- grijs (#aaaaaa)
 - lichtgrijs (#eeeeee)
