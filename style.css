@@ -68,6 +68,11 @@ li a:hover {
     text-align: center;
 }
 
+.timer {
+    color: #001e60;
+    font-size: 32px;
+}
+
 .column {
     float: left;
     width: 25%;
