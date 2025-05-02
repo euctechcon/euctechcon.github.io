@@ -216,3 +216,9 @@ li a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.td-grey {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #aaaaaa;
+}
