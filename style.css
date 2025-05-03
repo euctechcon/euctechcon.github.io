@@ -163,6 +163,15 @@ li a:hover {
     margin: auto;
     width: 100%;
     text-align: center;
+    background-color: #eeeeee;
+    border-radius: 16px;
+    border-color: #001e60;
+    border-width: 1px;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+
 }
 
 .footer-item {
