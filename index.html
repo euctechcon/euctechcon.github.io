@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Collage</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #f4f4f4; padding: 2rem; }
+    .collage { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; max-width: 1000px; margin: auto; }
+    img { width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <h1>Image Collage</h1>
+  <div class="collage">
+    <img src="images/1920x400-EUC-TechCon.png" alt="">
+    <img src="images/2160x1080-WH-EUC-TechCon.png" alt="">
+    <img src="images/400x400-EUC-TechCon-Socials.png" alt="">
+    <img src="images/400x400-TP-EUC-TechCon.png" alt="">
+  </div>
+</body>
+</html>
