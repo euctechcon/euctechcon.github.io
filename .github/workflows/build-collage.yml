@@ -21,8 +21,7 @@ jobs:
       run: |
         mkdir -p collage/images
 
-        cat <<EOF > output/index.html
-<!DOCTYPE html>
+          echo '<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -36,20 +35,17 @@ jobs:
 </head>
 <body>
   <h1>Image Collage</h1>
-  <div class="collage">
-EOF
+  <div class="collage">' > output/index.html
 
-        for img in image-import/*.{jpg,jpeg,png,gif}; do
-          [ -e "$img" ] || continue
-          cp "$img" collage/images/
-          echo "    <img src=\"images/$(basename "$img")\" alt=\"\">" >> collage/index.html
-        done
+          for img in images/*.{jpg,jpeg,png,gif}; do
+            [ -e "$img" ] || continue
+            cp "$img" output/images/
+            echo "    <img src=\"images/$(basename "$img")\" alt=\"\">" >> output/index.html
+          done
 
-        cat <<EOF >> collage/index.html
-  </div>
+          echo '  </div>
 </body>
-</html>
-EOF
+</html>' >> output/index.html
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
