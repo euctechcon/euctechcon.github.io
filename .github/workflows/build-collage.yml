@@ -19,8 +19,10 @@ jobs:
 
     - name: Generate collage index.html
       run: |
-        mkdir -p collage
-        echo '<!DOCTYPE html>
+        mkdir -p collage/images
+
+        cat <<EOF > output/index.html
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -34,23 +36,22 @@ jobs:
 </head>
 <body>
   <h1>Image Collage</h1>
-  <div class="collage">' > collage/index.html
+  <div class="collage">
+EOF
 
-        for img in import-images/*.{jpg,jpeg,png,gif}; do
+        for img in image-import/*.{jpg,jpeg,png,gif}; do
           [ -e "$img" ] || continue
-          echo "    <img src=\"../$img\" alt=\"\">" >> collage/index.html
+          cp "$img" collage/images/
+          echo "    <img src=\"images/$(basename "$img")\" alt=\"\">" >> collage/index.html
         done
 
-        echo '  </div>
+        cat <<EOF >> collage/index.html
+  </div>
 </body>
-</html>' >> collage/index.html
+</html>
+EOF
 
-    - name: Copy images to collage
-      run: |
-        mkdir -p collage/images
-        cp import-images/* collage/images/
-
-    - name: Upload collage to GitHub Pages
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
