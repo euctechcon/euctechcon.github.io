@@ -21,31 +21,31 @@ jobs:
       run: |
         mkdir -p collage/images
 
-          echo '<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Collage</title>
-  <style>
-    body { font-family: sans-serif; text-align: center; background: #f4f4f4; padding: 2rem; }
-    .collage { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; max-width: 1000px; margin: auto; }
-    img { width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-  </style>
-</head>
-<body>
-  <h1>Image Collage</h1>
-  <div class="collage">' > output/index.html
+          echo '<!DOCTYPE html>' > collage/index.html
+          echo '<html lang="en">' >> collage/index.html
+          echo '<head>' >> collage/index.html
+          echo '  <meta charset="UTF-8">' >> collage/index.html
+          echo '  <meta name="viewport" content="width=device-width, initial-scale=1.0">' >> collage/index.html
+          echo '  <title>Image Collage</title>' >> collage/index.html
+          echo '  <style>' >> collage/index.html
+          echo '    body { font-family: sans-serif; text-align: center; background: #f4f4f4; padding: 2rem; }' >> collage/index.html
+          echo '    .collage { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; max-width: 1000px; margin: auto; }' >> collage/index.html
+          echo '    img { width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }' >> collage/index.html
+          echo '  </style>' >> collage/index.html
+          echo '</head>' >> collage/index.html
+          echo '<body>' >> collage/index.html
+          echo '  <h1>Image Collage</h1>' >> collage/index.html
+          echo '  <div class="collage">' >> collage/index.html
 
-          for img in images/*.{jpg,jpeg,png,gif}; do
+          for img in image-import/*.{jpg,jpeg,png,gif}; do
             [ -e "$img" ] || continue
-            cp "$img" output/images/
-            echo "    <img src=\"images/$(basename "$img")\" alt=\"\">" >> output/index.html
+            cp "$img" collage/images/
+            echo "    <img src=\"images/$(basename "$img")\" alt=\"\">" >> collage/index.html
           done
 
-          echo '  </div>
-</body>
-</html>' >> output/index.html
+          echo '  </div>' >> collage/index.html
+          echo '</body>' >> collage/index.html
+          echo '</html>' >> collage/index.html
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
