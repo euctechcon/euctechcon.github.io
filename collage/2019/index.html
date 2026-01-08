@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2024</title>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<img class="menubar-logo" src="/media/1920x400-EUC-TechCon.png" height="30px" alt="EUC TechCon">
+
+<ul>    
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../../agenda.html">Agenda</a></li>
+    <li><a class="menubar-active" href="../../editions.html">Voorgaande edities</a></li>
+    <li><a href="../../team.html">Het team</a></li>
+    <li ><a href="https://bsky.app/profile/euctechcon.bsky.social" target="_blank"><img src="/media/bluesky_logo.svg" alt="English" height="15px" style="filter: invert(1);"></a></li>
+    <li ><a href="https://x.com/EUCTechCon" target="_blank"><img src="/media/x_logo.svg" alt="English" height="15px" style="filter: invert(1);"></a></li>
+    <li ><a href="https://www.linkedin.com/company/euctechcon/" target="_blank"><img src="/media/linkedin_logo.svg" alt="English" height="15px" style="filter: invert(1);"></a></li>    
+    <li style="float:right"><a href="../../en/editions.html">English&nbsp;&nbsp;<img src="/media/flag-for-united-kingdom-svgrepo-com.svg" alt="English" height="15px" style="filter: invert(1); padding-right: 10px;"></a></li>
+</ul></td></tr>
+
+  <div class="announce-large">2019 - Aalsmeer</div>
+  <div class="gallery" id="gallery"></div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img" />
+  </div>
+
+  <script src="imageList.js"></script>
+  <script>
+    const imageFolder = '/media/collage/2019/';
+    const gallery = document.getElementById('gallery');
+
+    imageList.forEach(filename => {
+      const img = document.createElement('img');
+      img.src = imageFolder + filename;
+      img.alt = filename;
+      img.onclick = () => openModal(img.src);
+      gallery.appendChild(img);
+    });
+
+    function openModal(src) {
+      document.getElementById("modal").style.display = "block";
+      document.getElementById("modal-img").src = src;
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+
+    document.getElementById("modal").addEventListener("click", function(e) {
+      if (e.target === this) closeModal();
+    });
+  </script>
+</body>
+</html>
