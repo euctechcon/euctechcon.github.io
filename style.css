@@ -70,7 +70,8 @@ li a:hover {
 
 .timer {
     color: #001e60;
-    font-size: 32px;
+    font-size: 48px;
+    font-weight: 400;
 }
 
 .column {
